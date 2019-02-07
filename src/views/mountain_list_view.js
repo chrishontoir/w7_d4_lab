@@ -13,6 +13,7 @@ MountainListView.prototype.bindEvents = function () {
 };
 
 MountainListView.prototype.render = function () {
+  this.container.innerHTML = " ";
   this.data.forEach((mountain) => {
     const mountainView = new MountainView(this.container, mountain);
     mountainView.render();

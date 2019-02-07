@@ -15,6 +15,19 @@ Mountains.prototype.getData = function() {
     .catch((err) => {
       PubSub.publish('Mountain:error', err);
     });
+    PubSub.subscribe("SelectMountain:selected-region", event => {
+      const selectedRegion = event.detail;
+      const allMountains = this.mountainsByRegion(selectedRegion);
+      PubSub.publish('Mountain:all-mountain', allMountains);
+    })
 };
+
+Mountains.prototype.mountainsByRegion = function (region) {
+  return this.data.filter(mountain => mountain.region === region);
+//
+// Mountains.prototype.returnedMountain = function(selectedRegion) {
+
+}
+
 
 module.exports = Mountains;
