@@ -10,6 +10,16 @@ MountainListView.prototype.bindEvents = function () {
     this.data = event.detail;
     this.render();
   });
+
+  PubSub.subscribe('Mountain:selected-mountains', (evt) => {
+    this.data = event.detail;
+    this.render();
+  });
+
+  PubSub.subscribe('Mountain:all-mountain-all', (evt) => {
+    this.data = event.detail;
+    this.render();
+  });
 };
 
 MountainListView.prototype.render = function () {

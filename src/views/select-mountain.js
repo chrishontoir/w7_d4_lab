@@ -25,7 +25,10 @@ SelectMountain.prototype.populate = function(allMountains) {
   uniqueRegions = new Set(allRegions);
   array = Array.from(uniqueRegions);
   console.log(array);
-
+  const optionall = document.createElement('option');
+  optionall.textContent = "All";
+  optionall.value = "all";
+  this.element.appendChild(optionall);
   array.forEach((region) => {
     const option = document.createElement('option');
     option.textContent = region;
