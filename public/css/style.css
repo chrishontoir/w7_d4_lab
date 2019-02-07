@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 100vh;
   font-family: 'Patrick Hand', cursive;
 
@@ -47,6 +49,7 @@ header select {
   margin-left: 10px;
   border: 1px solid black;
   height: 30px;
+  text-align-last: center;
 }
 
 header select:hover {
@@ -75,10 +78,10 @@ header select:hover {
 }
 
 .mountain-container:hover {
-  /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
-  transition: 2s; */
-  box-shadow: 0 0 20px white;
-  transition: 0.5s;
+  background-image: url(https://i.dailymail.co.uk/i/pix/tm/2008/08/bennevisMETRO_428x269_to_468x312.jpg);
+  background-size: cover;
+  background-position: ;
+  box-shadow: 0 0 20px grey;
 }
 
 .mountain-container h1 {
