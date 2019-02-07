@@ -5,6 +5,7 @@ const MountainView = function(container, mountain) {
 
 MountainView.prototype.render = function () {
   const mountainContainer = document.createElement('div');
+  mountainContainer.classList.add('mountain-container');
   // mountainContainer.classlist.add('mountain');
   const mountainName = document.createElement('h1');
   mountainName.textContent = this.mountain.name;
@@ -14,7 +15,7 @@ MountainView.prototype.render = function () {
   mountainContainer.appendChild(mountainInfo);
 
   const mountainHeight = document.createElement('li');
-  mountainHeight.textContent = `Height: ${this.mountain.height}`;
+  mountainHeight.textContent = `Height: ${this.mountain.height} metres`;
   mountainInfo.appendChild(mountainHeight);
 
   const mountainRegion = document.createElement('li');

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  height: 100vh;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px grey;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+header select {
+  margin-right: 20px;
+}
+
+#mountains {
+  position: relative;
+  z-index: 1;
+  top: 80px;
+  background-color: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+  justify-content: space-between;
+}
+
+.mountain-container {
+  background-color: rgba(255,255,255,0.9);
+  width: 32%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px grey;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: 2s;
+}
+
+.mountain-container:hover {
+  /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+  transition: 2s; */
+  box-shadow: 0 0 20px white;
+  transition: 0.5s;
+}
+
+.mountain-container h1 {
+  text-align: center;
+  font-size: 22px;
+}

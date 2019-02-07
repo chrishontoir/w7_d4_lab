@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title>Scottish Munros</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+
     <script src="js/bundle.js">
     </script>
   </head>
   <body>
-    <h1>Scottish Munros</h1>
-    <select id="select-region">
-      <option disabled selected></option>
-    </select>
+    <header>
+      <h1>Scottish Munros</h1>
+      <div class="select-a-region">
+        <label for="select-region">Select a region: </label>
+        <select id="select-region">
+          <option disabled selected></option>
+        </select>
+      </div>
+
+    </header>
     <div id=mountains></div>
   </body>
 </html>
